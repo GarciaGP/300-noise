@@ -1,0 +1,78 @@
+$icomoon-font-family: "icomoon" !default;
+$icomoon-font-path: "fonts" !default;
+
+$icon-medium: "\e900";
+$icon-facebook: "\ea90";
+$icon-instagram: "\ea92";
+$icon-spotify: "\ea94";
+$icon-twitter: "\ea96";
+
+@font-face {
+font-family: '#{$icomoon-font-family}';
+src: url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?mbf32n');
+src: url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?mbf32n#iefix') format('embedded-opentype'),
+	url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?mbf32n') format('truetype'),
+	url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?mbf32n') format('woff'),
+	url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?mbf32n##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+    font-family: 'Consolas';
+    src: url('#{$icomoon-font-path}/Consolas.eot');
+    src: url('#{$icomoon-font-path}/Consolas.eot?#iefix') format('embedded-opentype'),
+        url('#{$icomoon-font-path}/Consolas.woff2') format('woff2'),
+        url('#{$icomoon-font-path}/Consolas.woff') format('woff'),
+        url('#{$icomoon-font-path}/Consolas.ttf') format('truetype'),
+        url('#{$icomoon-font-path}/Consolas.svg#Consolas') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-medium {
+  &:before {
+	content: $icon-medium; 
+  }
+}
+.icon-facebook {
+  &:before {
+	content: $icon-facebook; 
+  }
+}
+.icon-instagram {
+  &:before {
+	content: $icon-instagram; 
+  }
+}
+.icon-spotify {
+  &:before {
+	content: $icon-spotify; 
+  }
+}
+.icon-twitter {
+  &:before {
+	content: $icon-twitter; 
+  }
+}
+

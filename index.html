@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>300 noise</title>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./style.scss">
+</head>
+<body>
+	<section class="header">
+
+		<div class="header__content">
+			<h1 class="header__title">
+				<img src="./images/logo.png" alt="300 Noise" class="header__logo">
+			</h1>
+
+			<p class="header__text grey consolas">
+				Quebrando o enigma presente na singularidade do que é experimentar e consumir cultura.
+			</p>
+			
+			<nav class="header__social">
+				<a target="_blank" href="https://www.instagram.com/300noise/" class="header__icon">
+					<span class="icon-instagram grey"></span>
+				</a>
+
+				<a target="_blank" href="http://twitter.com/300noise" class="header__icon">
+					<span class="icon-twitter grey"></span>
+				</a>
+
+				<a target="_blank" href="https://www.facebook.com/300noise/" class="header__icon">
+					<span class="icon-facebook grey"></span>
+				</a>
+
+				<a target="_blank" href="https://open.spotify.com/user/ur5mxjy1hrz2aee8z0o0nd5wp?si=qq6fJ31RSe-yFvIcgtpabg" class="header__icon">
+					<span class="icon-spotify grey"></span>
+				</a>
+
+				<a target="_blank" href="https://medium.com/300-noise" class="header__icon">
+					<span class="icon-medium grey"></span>
+				</a>
+			</nav>
+		</div>
+
+		<div class="header__image-wrapper">
+			<img src="./images/header-image.png" alt="Apresentação da banda Mutanen no evento Sonora sintética">
+		</div>
+	</section>
+
+	<section class="info">
+		<div class="info__card is-green">
+			<h2 class="section-title grey">
+				Conectar e Experimentar
+			</h2>
+
+			<p class="text grey">
+				De 2014 para cá estamos constantemente trazendo eventos de fusão entre arte, cultura e expressão. Trabalhamos com mais de 50 artistas de diversas vertentes.
+			</p>
+		</div>
+
+		<div class="info__card is-grey">
+			<h2 class="section-title green">
+				Nosso conteudo
+			</h2>
+
+			<p class="text green">
+				Opinião, expressão, criação, transformação. Somos vivos e ecoamos vozes.
+			</p>
+		</div>
+	</section>
+ 
+	<section class="products">
+		<div class="products__content">
+			<h2 class="section-title grey">
+				A Agência Cultural que cansou de ver apenas números.
+			</h2>
+
+			<p class="text grey">
+				Com profissionais de comunicação, ciências sociais, geografia, história e mergulhadores de dados, criamos um modelo de trabalho aprofundado e dinâmico que estuda sobretudo as convergências culturais.
+			</p>
+		</div>
+
+		<div class="products__cards">
+			<div class="products__card">
+				<img src="./images/ico-card-01.png" alt="">
+
+				<p class="products__card-text">
+					Consultoria
+				</p>
+			</div>
+
+			<div class="products__card">
+				<img src="./images/ico-card-02.png" alt="">
+
+				<p class="products__card-text">
+					Assessoria <br>
+					de comunicação
+				</p>
+			</div>
+
+			<div class="products__card">
+				<img src="./images/ico-card-03.png" alt="">
+
+				<p class="products__card-text">
+					Music branding
+				</p>
+			</div>
+
+			<div class="products__card">
+				<img src="./images/ico-card-04.png" alt="">
+
+				<p class="products__card-text">
+					Produção de projetos
+				</p>
+			</div>
+			
+			<div class="products__card">
+				<img src="./images/ico-card-05.png" alt="">
+
+				<p class="products__card-text">
+					Estudos <br>
+					comportamentais
+				</p>
+			</div>
+			
+		</div>
+	</section>
+
+	<section class="gallery">
+		<div class="gallery__header">
+			<h2 class="section-title green">
+				O que temos produzido
+			</h2>
+
+			<nav class="gallery__menu">
+				<button class="gallery__button is-actived" data-button="publi">
+					Publicações
+				</button>
+
+				<button class="gallery__button" data-button="podcasts">
+					Podcasts
+				</button>
+
+				<button class="gallery__button" data-button="events">
+					Eventos
+				</button>
+			</nav>
+		</div>
+
+		<div class="gallery__content">
+			<div class="gallery__section is-actived publi" data-section="publi">
+				<div class="publi__cards"></div>
+
+				<a target="_blank"  href="https://medium.com/300-noise" target="_blank" class="publi__button">
+					Acesse nosso Medium
+				</button>
+			</div>
+			
+			<div class="gallery__section podcasts" data-section="podcasts">
+				<div class="podcasts__playlist">
+					<iframe src="https://open.spotify.com/embed-podcast/show/7MB3QCNBkMcTaXsP9VWU20
+" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+				</div>
+
+				<a target="_blank" href="https://open.spotify.com/show/7MB3QCNBkMcTaXsP9VWU20?si=4OuKSiFfQImwBruD34IW3Q" class="podcasts__button">
+					Abrir playlist
+				</a>
+
+			</div>
+			
+			<div class="gallery__section events" data-section="events">
+				<div class="events__cards">
+					<figure class="events__card" event-button="1">
+						<img src="./images/eventos-01.png" class="events__card-image" alt="">
+
+						<figurecaption class="events__card-title">
+							300 TIRO P/ MINUTO
+						</figurecaption>
+					</figure>
+
+					<div class="modal" event-modal="1">
+							<img src="./images/modal-02.png" class="modal__image" alt="">
+
+						<div class="modal__content">
+							<h3 class="modal__title consolas">
+								300 TIRO POR MINUTO
+							</h3>
+
+							<p class="modal__text">
+								300 Tiro Por Minuto, nossa primeira empreitada com eventos rendeu três edições da transformação de um espaço residencial na Zona Norte em um festival de bandas de metal do circuito underground de São Paulo. Trouxe bandas de outros estados, rendeu documentário e impulsionou outros eventos seguirem o mesmo molde do festival.
+							</p>
+						</div>
+
+						<span class="modal__close">
+							<svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<line x1="1.70711" y1="1.29289" x2="11.7071" y2="11.2929" stroke="black" stroke-width="2"/>
+								<line x1="1.29289" y1="11.2929" x2="11.2929" y2="1.29289" stroke="black" stroke-width="2"/>
+							</svg>
+						</span>
+					</div>
+
+					<figure class="events__card" event-button="2">
+						<img src="./images/eventos-02.png" class="events__card-image" alt="">
+
+						<figurecaption class="events__card-title">
+							ULAWAVE
+						</figurecaption>
+					</figure>
+
+					<div class="modal" event-modal="2">
+						<img src="./images/modal-03.png" class="modal__image" alt="">
+
+						<div class="modal__content">
+							<h3 class="modal__title consolas">
+								ULAWAVE
+							</h3>
+
+							<p class="modal__text">
+								Ulawave foi nossa experimentação de reimaginar um luau havaiano com bandas, música eletrônica e espaço imersivo. Tendo, até o momento, três edições, focamos na criação de um espaço temático que começou dentro de um estúdio e se transportou para uma mansão no alto da Serra da Cantareira, tendo mais de vinte nomes no line up entre djs, bandas e artistas convidados para expor. Neste formato fizemos, três áreas com shows em uma pool party, luau na fogueira e salão de jogos regado a tecno.
+							</p>
+						</div>
+
+						<span class="modal__close">
+							<svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<line x1="1.70711" y1="1.29289" x2="11.7071" y2="11.2929" stroke="black" stroke-width="2"/>
+								<line x1="1.29289" y1="11.2929" x2="11.2929" y2="1.29289" stroke="black" stroke-width="2"/>
+							</svg>
+						</span>
+					</div>
+
+					<figure class="events__card" event-button="3">
+						<img src="./images/eventos-03.png" class="events__card-image" alt="">
+
+						<figurecaption class="events__card-title">
+							SONORA SINTÉTICA
+						</figurecaption>
+					</figure>
+
+					<div class="modal" event-modal="3">
+						<img src="./images/modal-01.png" class="modal__image" alt="">
+
+						<div class="modal__content">
+							<h3 class="modal__title consolas">
+								SONORA SINTÉTICA
+							</h3>
+
+							<p class="modal__text">
+								Último evento da 300 Noise, realizado em 14 de dezembro de 2019, o Sonora Sintética foi um festival que teve como conceito central a convergência cultural. Reunindo bandas de todas as regiões de São Paulo, debates sobre políticas culturais e mídia alternativa, exposições artísticas e interação do público, o Sonora Sintética trouxe a diversidade em uma experiência sensorial única e inclusiva.
+							</p>
+						</div>
+
+						<span class="modal__close">
+							<svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<line x1="1.70711" y1="1.29289" x2="11.7071" y2="11.2929" stroke="black" stroke-width="2"/>
+								<line x1="1.29289" y1="11.2929" x2="11.2929" y2="1.29289" stroke="black" stroke-width="2"/>
+							</svg>
+						</span>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="contact">
+		<div class="contact__content">
+			<h2 class="section-title green">
+				E ai, bora bater um papo?
+			</h2>
+
+			<p class="text green">
+				Tem alguma sugestão de conteúdo que você gostaria que produzissemos? Possui alguma proposta de projeto para trabalhar com a gente? Ou apenas gostaria de deixar uma sugestão, elogio ou crítica? Nos mande uma mensagem no formulário ao lado
+			</p>
+
+			<p class="text green">
+				Se preferir, entre em contato via <strong>300noise@gmail.com</strong>.
+			</p>
+
+			<nav class="contact__social">
+				<a target="_blank" href="https://www.instagram.com/300noise/" class="contact__icon">
+					<span class="icon-instagram grey"></span>
+				</a>
+
+				<a target="_blank" href="http://twitter.com/300noise" class="contact__icon">
+					<span class="icon-twitter grey"></span>
+				</a>
+
+				<a target="_blank" href="https://www.facebook.com/300noise/" class="contact__icon">
+					<span class="icon-facebook grey"></span>
+				</a>
+
+				<a target="_blank" href="https://open.spotify.com/user/ur5mxjy1hrz2aee8z0o0nd5wp?si=qq6fJ31RSe-yFvIcgtpabg" class="contact__icon">
+					<span class="icon-spotify grey"></span>
+				</a>
+
+				<a target="_blank" href="https://medium.com/300-noise" class="contact__icon">
+					<span class="icon-medium grey"></span>
+				</a>
+			</nav>
+
+			<div class="text green contact__copyright">
+				<strong>
+					300 Noise, todos os direitos blablabla.
+				</strong>
+			</div>
+		</div>
+
+		<div class="contact__form-wrapper">
+			<form class="contact__form" method="POST">
+				<span class="contact__feedback hide">
+					<p class="contact__feedback-text text grey consolas">
+						Recebemos seu e-mail! <br>
+						Responderemos assim que possível!
+					</p>
+				</span>
+
+				<div class="contact__form-fields">
+					<input type="text" class="contact__input is-required" id="nome" placeholder="Nome" name="nome" required>
+	
+					<input type="text" class="contact__input is-required" id="email" placeholder="E-mail" name="email" required>
+	
+					<input type="tel" class="contact__input" id="celular" placeholder="Celular" name="celular">
+	
+					<textarea name="mensagem" id="mensagem" class="contact__textarea is-required" placeholder="O que você tem para nos dizer?" name="mensagem" required></textarea>
+	
+					<input type="submit" class="contact__submit" value="Enviar E-mail">
+				</div>
+			</form>
+		</div>
+	</section>
+
+  <section class="lead">
+    <div class="modal lead is-actived" event-modal="lead">
+      <img src="./images/match_sonoro.jpeg" class="modal__image is-small" alt="">
+
+    <div class="modal__content">
+      <div class="lead__step step-01 is-actived">
+        <p class="modal__text mb-28">
+			A pesquisa 'Match Sonoro' foi conduzida pela 300 Noise para entender a importância do gosto musical de uma pessoa em aplicativos de relacionamento. Exploramos como as preferências musicais influenciam conexões e compatibilidades amorosas no mundo digital.
+        </p>
+  
+        <p class="modal__form-title">
+          Preencha os dados abaixo para ter acesso à pesquisa
+        </p>
+  
+        <div class="modal__form">
+          <!-- Begin Mailchimp Signup Form -->
+          <style type="text/css">
+            #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+            /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+              We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+          </style>
+          <div id="mc_embed_signup">
+          <form action="https://300noise.us10.list-manage.com/subscribe/post?u=c0aedb714688d296ff276e514&amp;id=0c421895a0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div id="mc_embed_signup_scroll">
+          <div class="mc-field-group">
+            <input type="text" value="" placeholder="Seu nome" name="FNAME" class="input-text" id="mce-FNAME">
+          </div>
+          <div class="mc-field-group">
+          </label>
+            <input type="email" value="" name="EMAIL" placeholder="Email" class="email input-text" id="mce-EMAIL">
+          </div>
+          <div class="mc-field-group">
+            <input type="text" value="" name="LNAME" placeholder="Profissão" class="input-text" id="mce-LNAME">
+          </div>
+          <div class="mc-field-group">
+            <input type="text" value="" name="MMERGE3" class="input-text" placeholder="Empresa" id="mce-MMERGE3">
+          </div>
+            <div id="mce-responses" class="clear">
+              <div class="response" id="mce-error-response" style="display:none"></div>
+              <div class="response" id="mce-success-response" style="display:none"></div>
+            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c0aedb714688d296ff276e514_0c421895a0" tabindex="-1" value=""></div>
+              <div class="clear"><input type="submit" value="Baixar pesquisa" name="subscribe" id="mc-embedded-subscribe" class="button form-submit"></div>
+              </div>
+          </form>
+          </div>
+          <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='MMERGE3';ftypes[3]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+          <!--End mc_embed_signup-->
+        </div>
+      </div>
+
+      <div class="lead__step step-02">
+        <p class="modal__text mb-28">
+			A pesquisa 'Match Sonoro' foi conduzida pela 300 Noise para entender a importância do gosto musical de uma pessoa em aplicativos de relacionamento. Exploramos como as preferências musicais influenciam conexões e compatibilidades amorosas no mundo digital.
+        </p>
+
+        <a class="form-submit" target="_blank" href="./images/apresentacao_match_sonoro_06-13.pdf" donwload>
+          Baixar pesquisa
+        </a>
+      </div>
+    </div>
+
+  </div>
+  </section>
+
+	<span class="overlay is-actived"></span>
+	<script src="./index.js"></script>
+	<script src="./app.js"></script>
+</body>
+</html>
