@@ -31,7 +31,7 @@ export default function Home() {
         </header>
         <section className="home">
           <div className="event-info text-italic fs-16">
-            <p>PROXIMO EVENTO<span> FESTA DE HALLOWEEN 10/10</span></p>
+            <p>PESQUISA: O AMOR ESTÁ NO AR?<span> DESCUBRA AGORA</span></p>
           </div>
           <div className="landing">
             {/* <img className="landing-300" src="assets/img/300.png" />
@@ -57,9 +57,9 @@ export default function Home() {
 
           <footer className="text-italic">
             <ul>
-              <li><a href="#">INSTAGRAM</a></li>
-              <li><a href="#">TWITTER</a></li>
-              <li><a href="#">SPOTIFY</a></li>
+              <li><a href="https://www.instagram.com/300noise/">INSTAGRAM</a></li>
+              <li><a href="https://x.com/300noise">TWITTER</a></li>
+              <li><a href="https://open.spotify.com/show/7MB3QCNBkMcTaXsP9VWU20?si=7e844d76bd51459d">SPOTIFY</a></li>
             </ul>
           </footer>
         </section>
@@ -102,53 +102,62 @@ export default function Home() {
               mais você e seu projeto precisarem.</p>
 
           </div>
-          <div className="about-card text-italic">
-            <div className="icon">
-              {/* <img src="assets/img/consultoria.png" alt="consultoria" /> */}
-              <Image
-                src={require('/public/consultoria.png')}
+          <div className="about-cards-wrapper">
+            <div className="about-card text-italic">
+              <div className="about-card-outline"></div>
+              <div className="icon">
+                <img src="/consultoria.png" alt="consultoria" />
+                {/* <Image
+              fill={false}
+                className="icon-img"
+                src="/consultoria.png"
                 alt="consultoria"
-              />
+              /> */}
+              </div>
+              <div className="card-text">
+                <p>CONSULTORIA</p>
+              </div>
             </div>
-            <div className="card-text">
-              <p>CONSULTORIA</p>
+            <div className="about-card text-italic">
+            <div className="about-card-outline"></div>
+              <div className="icon">
+                <img src="assets/img/assessoria.png" alt="assessoria de comunicação" />
+              </div>
+              <div className="card-text">
+                <p>ASSESSORIA DE COMUNICAÇÃO</p>
+              </div>
             </div>
-          </div>
-          <div className="about-card text-italic">
-            <div className="icon">
-              <img src="assets/img/assessoria.png" alt="consultoria" />
+            <div className="about-card text-italic">
+            <div className="about-card-outline"></div>
+              <div className="icon">
+                <img src="assets/img/music branding.png" alt="music branding" />
+              </div>
+              <div className="card-text">
+                <p>MUSIC BRANDING</p>
+              </div>
             </div>
-            <div className="card-text">
-              <p>ASSESSORIA DE COMUNICAÇÃO</p>
-            </div>
-          </div>
-          <div className="about-card text-italic">
-            <div className="icon">
-              <img src="assets/img/music branding.png" alt="consultoria" />
-            </div>
-            <div className="card-text">
-              <p>MUSIC BRANDING</p>
-            </div>
-          </div>
-          <div className="about-card text-italic">
-            <div className="icon">
-              {/* <img src="assets/img/producao.png" alt="consultoria" /> */}
-              {/* <Image
+            <div className="about-card text-italic">
+            <div className="about-card-outline"></div>
+              <div className="icon">
+                <img src="assets/img/producao.png" alt="produção de projetos" />
+                {/* <Image
                 fill={true}
                 src="/producao.png"
                 alt="produção"
               /> */}
+              </div>
+              <div className="card-text">
+                <p>PRODUÇÃO DE PROJETOS</p>
+              </div>
             </div>
-            <div className="card-text">
-              <p>PRODUÇÃO DE PROJETOS</p>
-            </div>
-          </div>
-          <div className="about-card text-italic">
-            <div className="icon">
-              <img src="assets/img/estudos.png" alt="consultoria" />
-            </div>
-            <div className="card-text">
-              <p>ESTUDOS COMPORTAMENTAIS</p>
+            <div className="about-card text-italic">
+            <div className="about-card-outline"></div>
+              <div className="icon">
+                <img src="assets/img/estudos.png" alt="estudos comportamentais" />
+              </div>
+              <div className="card-text">
+                <p>ESTUDOS COMPORTAMENTAIS</p>
+              </div>
             </div>
           </div>
         </section>
