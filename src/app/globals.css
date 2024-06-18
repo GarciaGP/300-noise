@@ -229,6 +229,7 @@ section {
 
 .projects-showcase {
   display: flex;
+  justify-content: center;
 }
 
 .project-item {
@@ -238,7 +239,8 @@ section {
 }
 
 .project-item img {
-  max-width: 90%;
+  width: 90%;
+  max-width: 600px;
   height: auto;
 }
 
@@ -303,6 +305,10 @@ section {
 .about .text-area p {
   margin: 5px 0;
   font-size: 16px;
+}
+
+.about-cards-wrapper {
+  z-index: 10;
 }
 
 .about-card {
