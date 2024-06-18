@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>300Noise</title>
+    <link rel="stylesheet" href="300Noise_files/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="300Noise_files/css2.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="noise-background">
+        <div class="container">
+            <header>
+                <div class="logo">
+                    <img src="300Noise_files/300noiseLogo.png" alt="300Noise Logo">
+                </div>
+
+                <div class="openbtn">
+                    <div class="openbtn-area"><span></span><span>
+                        </span><span></span>
+                    </div>
+                </div>
+
+            </header>
+            <section class="home">
+                <div class="event-info">
+                    <p>PRÓXIMO EVENTO: <span>FESTA DE HALLOWEEN 31/10</span></p>
+                </div>
+                <main>
+                    <div class="landing">
+                        <img class="300" src="300Noise_files/300.png">
+                        <img class="noise" src="300Noise_files/noisetxt.png">
+                        
+                    </div>
+                </main>
+                <footer>
+                    <ul>
+                        <li><a href="#">INSTAGRAM</a></li>
+                        <li><a href="#">TWITTER</a></li>
+                        <li><a href="#">MEDIUM</a></li>
+                    </ul>
+                </footer>
+            </section>
+            <section class="projects">
+                <div class="section-title">
+                    <h3>NOSSOS PROJETOS</h3>
+                </div>
+                <div class="projects-showcase">
+                    <div class="project-item">
+                        <img src="300Noise_files/match_sonoro.jpeg" alt="Match Sonoro">
+                    </div>
+                </div>
+            </section>
+            <section class="about dark-text">
+                <div class="section-title about-title">
+                    <h3>QUEM SOMOS</h3>
+                </div>
+                <div class="text-area">
+                    <p>Com profissionais de comunicação, ciências sociais, geografia, história e mergulhadores de dados,
+                        criamos um modelo de trabalho aprofundado e dinâmico que estuda sobretudo as convergências
+                        culturais.</p>
+                </div>
+                <div class="about-card">
+                    <div class="icon"></div>
+                    <div class="card-text"></div>
+                </div>
+            </section>
+            <section class="contact dark-text">
+                <div class="section-title">
+                    <h3>BORA BATER UM PAPO?</h3>
+                </div>
+                <div class="text-area">
+                    <p>Tem alguma sugestão de conteúdo que você gostaria que produzissemos? Possui alguma proposta de
+                        projeto para trabalhar com a gente? Ou apenas gostaria de deixar uma sugestão, elogio ou
+                        crítica? Nos mande uma mensagem no formulário.</p>
+                </div>
+                <div class="text-area">
+                    <p>
+                        Se preferir, entre em contato via 300noise@gmail.com.</p>
+                </div>
+                <div class="form-wrapper">
+                    <form action="post">
+                        <input type="text" name="name" id="" placeholder="Nome">
+                        <input type="text" name="email" id="" placeholder="Email">
+                        <textarea type="text" rows="4" name="suggestions" id="" placeholder="O que tem para nos dizer?"></textarea>
+                        <button type="submit">ENVIAR</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body><style type="text/css"></style></html>
