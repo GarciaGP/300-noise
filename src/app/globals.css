@@ -54,6 +54,10 @@ body {
   font-size: 16px;
 }
 
+textarea:focus, input:focus{
+  outline: none;
+}
+
 .container {
   margin: 0 auto;
   /* background-color: #f0f0f0; */
@@ -208,12 +212,12 @@ section {
 
 .bg-image {
   /* background-image: url(/public/match_sonordsfdsfo.jpeg); */
-  height: calc(100% - 50px);
+  height: calc(100vh - 50px);
   width: 100%;
   position: absolute;
   filter: opacity(0.8);
   background-position: center;
-  background-size: cover;
+  background-size: contain;
 }
 
 .bg-image .blur {
@@ -365,6 +369,14 @@ section {
   margin: 6px 0px;
 }
 
+.contact .form-area {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 50%;
+}
+
 .contact .form-wrapper {
   display: flex;
   flex-flow: column;
@@ -377,14 +389,15 @@ section {
 .contact .form-wrapper form>input,
 .contact .form-wrapper form>textarea {
   background: transparent;
-  margin: 5px 0px;
+  margin: 8px 0px;
   border: 1px solid #2A2A2A;
-  padding: 6px 16px;
+  padding: 12px 16px;
 }
 
 input::placeholder,
 textarea::placeholder {
-  font-size: 10px;
+  font-size: 16px;
+  opacity: 1;
   color: #2A2A2A !important
 }
 
@@ -392,8 +405,9 @@ textarea::placeholder {
   border: none;
   font-style: italic;
   background: #01E78B;
-  padding: 6px;
+  padding: 16px;
   margin-top: 4px;
+  color: #2A2A2A;
 }
 
 .menu {

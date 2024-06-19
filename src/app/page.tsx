@@ -119,7 +119,7 @@ export default function Home() {
               </div>
             </div>
             <div className="about-card text-italic">
-            <div className="about-card-outline"></div>
+              <div className="about-card-outline"></div>
               <div className="icon">
                 <img src="assets/img/assessoria.png" alt="assessoria de comunicação" />
               </div>
@@ -128,7 +128,7 @@ export default function Home() {
               </div>
             </div>
             <div className="about-card text-italic">
-            <div className="about-card-outline"></div>
+              <div className="about-card-outline"></div>
               <div className="icon">
                 <img src="assets/img/music branding.png" alt="music branding" />
               </div>
@@ -137,7 +137,7 @@ export default function Home() {
               </div>
             </div>
             <div className="about-card text-italic">
-            <div className="about-card-outline"></div>
+              <div className="about-card-outline"></div>
               <div className="icon">
                 <img src="assets/img/producao.png" alt="produção de projetos" />
                 {/* <Image
@@ -151,7 +151,7 @@ export default function Home() {
               </div>
             </div>
             <div className="about-card text-italic">
-            <div className="about-card-outline"></div>
+              <div className="about-card-outline"></div>
               <div className="icon">
                 <img src="assets/img/estudos.png" alt="estudos comportamentais" />
               </div>
@@ -164,7 +164,7 @@ export default function Home() {
         <section className="contact dark-text">
 
           <div className="section-title">
-            <h3>QUER CONVERSAR COM A GENTE?</h3>
+            <h3>BORA BATER UM PAPO?</h3>
           </div>
           <div className="text-area">
             <p>Quer a nossa visão e produção presentes na sua ideia? Precisa de dados e análises? Entre em contato!</p>
@@ -173,14 +173,16 @@ export default function Home() {
             <p>
               Se preferir, entre em contato via 300noise@gmail.com.</p>
           </div>
-          <div className="form-wrapper">
-            <form action="post">
-              <input type="text" name="name" id="" placeholder="Nome" />
-              <input type="text" name="email" id="" placeholder="Email" />
-              <textarea rows={4} name="suggestions" id=""
-                placeholder="O que tem para nos dizer?"></textarea>
-              <button type="submit">ENVIAR</button>
-            </form>
+          <div className="form-area">
+            <div className="form-wrapper">
+              <form action="post">
+                <input type="text" name="name" id="" placeholder="Nome" />
+                <input type="text" name="email" id="" placeholder="Email" />
+                <textarea rows={4} name="suggestions" id=""
+                  placeholder="O que tem para nos dizer?"></textarea>
+                <button type="submit">ENVIAR</button>
+              </form>
+            </div>
           </div>
         </section>
       </div>
