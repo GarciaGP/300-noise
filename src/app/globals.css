@@ -215,6 +215,7 @@ section {
  height: calc(100vh - 50px);
   width: 100%;
   position: absolute;
+  overflow: hidden;
 }
 
 .bg-image > * {
