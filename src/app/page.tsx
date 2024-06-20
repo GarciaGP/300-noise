@@ -11,7 +11,7 @@ import assessoria from "../../public/assets/img/assessoria.png"
 
 export default function Home() {
   return (
-    <div className="noise-background">
+
       <div className="container">
         <header>
           <div className="logo">
@@ -178,7 +178,7 @@ export default function Home() {
               <form action="post">
                 <input type="text" name="name" id="" placeholder="Nome" />
                 <input type="text" name="email" id="" placeholder="Email" />
-                <textarea rows={4} name="suggestions" id=""
+                <textarea rows={8} name="suggestions" id="" 
                   placeholder="O que tem para nos dizer?"></textarea>
                 <button type="submit">ENVIAR</button>
               </form>
@@ -186,6 +186,6 @@ export default function Home() {
           </div>
         </section>
       </div>
-    </div>
+
   );
 }
