@@ -208,17 +208,34 @@ section {
 
 .projects {
   height: calc(100vh - 50px);
+  
 }
 
 .bg-image {
-  /* background-image: url(/public/match_sonordsfdsfo.jpeg); */
-  height: calc(100vh - 50px);
+ height: calc(100vh - 50px);
   width: 100%;
   position: absolute;
-  filter: opacity(0.8);
-  background-position: center;
-  background-size: contain;
 }
+
+.bg-image > * {
+  /* background-image: url(/public/match_sonordsfdsfo.jpeg); */
+  /* height: calc(100vh - 50px);
+  width: 100%; */
+  position: absolute;
+  filter: opacity(0.8);
+  filter: blur(50px);
+  /* background-position: center;
+  background-size: contain; */
+}
+
+/* .bg-image::before {
+  background-color: rgba(235, 235, 235, .3);
+  content: '';
+  filter: blur(18px);
+  position: absolute;
+  inset: 3%;
+  z-index: -1;
+} */
 
 .bg-image .blur {
   position: absolute;

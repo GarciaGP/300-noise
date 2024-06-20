@@ -64,12 +64,15 @@ export default function Home() {
           </footer>
         </section>
         <section className="projects">
-          <div className="bg-image" style={
-            {
-              backgroundImage: `url(/assets/img/match_sonoro.jpeg)`
-            }
-          }>
-            <div className="blur"></div>
+          <div className="bg-image">
+            <Image 
+            src={"/assets/img/match_sonoro.jpeg"}
+            alt="O amor está no ar?"
+            fill={true}
+            >
+            </Image> 
+              {/* backgroundImage: `url(/assets/img/match_sonoro.jpeg)` */}
+            {/* <div className="blur"></div> */}
           </div>
           <div className="section-title">
             <h3>NOSSOS PROJETOS</h3>
