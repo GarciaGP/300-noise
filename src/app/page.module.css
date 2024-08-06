@@ -1,0 +1,428 @@
+* {
+  font-family: "Ubuntu Mono";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.ubuntu-mono-regular {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ubuntu-mono-bold {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.ubuntu-mono-regular-italic {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.ubuntu-mono-bold-italic {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #202020;
+  color: #000;
+}
+
+.text-centered {
+  text-align: center;
+}
+
+.dark-text {
+  color: #2F2F2F;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.container {
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  /* background-image: url(../assets/img/noise.png); */
+  opacity: 0.9;
+}
+
+header {
+  width: 100%;
+  max-width: 100%;
+  position: fixed;
+  z-index: 1000;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  height: 50px;
+  border-bottom: 1px solid #D2D2D2;
+}
+
+header .logo img {
+  width: 100px;
+}
+
+.openbtn {
+  background: transparent;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border-left: #D2D2D2 solid 1px;
+}
+
+.openbtn .openbtn-area{
+  transition: all .4s;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.openbtn span {
+  background: #000;
+  display: inline-block;
+  border-radius: 3px;
+  left: 12px;
+  height: 1px;
+  transition: all .4s;
+  width: 40%;
+  margin: 2px;
+
+  &:nth-of-type(1) {
+      top: 16px;
+  }
+  &:nth-of-type(2) {
+      top: 24px;
+  }
+  &:nth-of-type(3) {
+      top: 32px;
+  }
+}
+
+.openbtn.active .openbtn-area {
+  transform: rotate(360deg);
+}
+
+.logo {
+  padding-left: 15px;
+}
+
+.logo img {
+  object-fit: cover;
+  height: 50px;
+  width: 100px;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.home {
+  height: calc(100vh - 50px);
+  margin-top: 50px;
+}
+
+.event-info p, .event-info span {
+  font-size: 12px;
+}
+
+.event-info span {
+  font-weight: bold;
+}
+
+.home .landing {
+  margin-top: 80px;
+  height: 100px;
+}
+
+.home .landing .landing-300 {
+  position: absolute;
+  top: -30px;
+  left: -10px;
+  width: 175px;
+}
+
+.landing .landing-noise {
+  position: absolute;
+  width: 230px;
+  left: 45px;
+  top: 30px
+}
+
+
+.projects {
+  height: calc(100vh - 50px);
+}
+
+.bg-image {
+  background-image: url(../assets/img/match_sonoro.jpeg);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  filter: opacity(0.8);
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-image .blur {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(30px);
+}
+
+.projects .section-title {
+  color: #fff;
+}
+
+.projects-showcase {
+  display: flex;
+}
+
+.project-item {
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.project-item img {
+  max-width: 90%;
+}
+
+.section-title {
+  text-align: center;
+  margin-top: 45px;
+  margin-bottom: 45px;
+  z-index: 2;
+}
+
+.section-title h3 {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.section-title.about
+
+.projects .section-title h3 {
+  color: #fff;
+}
+
+.about {
+  padding: 20px;
+  --color: #E1E1E1;
+background-color: #F3F3F3;
+background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+    linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+background-size: 35px 35px;
+box-shadow: inset 0px 700px 500px -500px #fff, 0px -400px 500px -500px  #fff; 
+min-height: 100vh;
+}
+
+.about::after {
+  position: absolute;
+  content: "";
+  height: 30%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(white 0%, transparent 100%);
+}
+
+.about::before {
+  position: absolute;
+  content: "";
+  height: 30%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(transparent 0%, white 100%);
+}
+
+.section-title.about-title {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.about .text-area {
+  margin-bottom: 20px;
+  font-size: 11px;
+}
+
+.about .text-area p {
+  margin: 5px 0;
+}
+
+.about-card {
+  z-index: 999;
+  background-color: #fff;
+  width: 85%;
+  height: 120px;
+  align-self: center;
+  display: flex;
+  flex-flow: column;
+  align-items: left;
+  justify-content: space-between;
+  padding: 15px;
+  margin: 7px 0px;
+}
+
+.about-card .icon img{
+  width: 35px;
+}
+
+.contact {
+  padding: 20px;
+  background-color: #C1FFE6;
+}
+
+
+.noise-background {
+  background-image: url(../assets/img/noise.png); 
+}
+
+.contact .section-title {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.contact .text-area {
+  font-size: 11px;
+  font-style: normal;
+  margin: 6px 0px;
+}
+
+.contact .form-wrapper {
+  display: flex;
+  flex-flow: column;
+}
+
+.contact .form-wrapper form > *{
+  width: 100%;
+}
+
+.contact .form-wrapper form > input, .contact .form-wrapper form > textarea {
+  background: transparent;
+  margin: 5px 0px;
+  border: 1px solid #2A2A2A;
+  padding: 6px 12px;
+}
+
+input::placeholder, textarea::placeholder {
+  font-size: 10px;
+  color: #2A2A2A !important
+}
+
+.contact .form-wrapper form > button {
+  border: none;
+  font-style: italic;
+  background: #01E78B;
+  padding: 6px;
+  margin-top: 4px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+}
+
+.hamburger {
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+}
+
+
+.event-info {
+padding-top: 5px;
+  padding-bottom: 5px;
+text-align: center;
+  border-bottom: 1px solid #D2D2D2;
+}
+
+
+nav {
+  margin: 20px 0;
+}
+
+nav p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+nav p span {
+  color: #ff0000;
+}
+
+main .landing {
+  margin: 50px 0;
+  position: relative;
+}
+
+main .landing h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+}
+
+main .landing h1 span {
+  color: #00ff00;
+  position: absolute;
+  left: 50px;
+  top: 0;
+  filter: blur(4px);
+  transform: rotate(5deg);
+}
+
+
+footer ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      font-size: 12px;
+}
+
+footer ul li {
+  margin: 0 10px;
+}
+
+footer ul li a {
+  text-decoration: underline;
+  color: #000;
+}
+
+.img-placeholder {
+  height: 400px;
+  background-color: purple;
+}
+
+@media (max-width: 400px) {
+  .container {
+      
+  }
+
+  main .content h1 {
+      font-size: 2rem;
+  }
+}
+
+
