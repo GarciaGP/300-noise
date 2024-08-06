@@ -306,6 +306,7 @@ section {
   z-index: 2;
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 
 .project-item img {

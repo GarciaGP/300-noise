@@ -6,7 +6,7 @@ import styles from "./page.module.css";
 import logo from "../../public/images/300noiseLogo.png"
 import text300 from "../../public/assets/img/300.png"
 import textNoise from "../../public/assets/img/noisetxt.png"
-import match_sonoro_img from "../../public/assets/img/match_sonoro.jpeg"
+import match_sonoro_img from "../../public/assets/img/amor_no_som.jpg"
 import consultoria from "../../public/assets/img/consultoria.png"
 import musicBranding from "../../public/assets/img/music branding.png"
 import assessoria from "../../public/assets/img/assessoria.png"
@@ -24,6 +24,10 @@ export default function Home() {
         closeButtonDisplay.style.display === "none" ? closeButtonDisplay.style.display = "block" : closeButtonDisplay.style.display = "none";
       }
     }
+  }
+
+  function openPdf() {
+    window.open('https://www.300noise.com.br/images/apresentacao_match_sonoro_06-13.pdf', '_self');
   }
 
   // openCloseNavLinks();
@@ -124,7 +128,7 @@ export default function Home() {
           <h3>NOSSOS PROJETOS</h3>
         </div>
         <div className="projects-showcase">
-          <div className="project-item">
+          <div className="project-item" onClick={openPdf}>
             {/* <img src="./assets/img/match_sonoro.jpeg" alt="Match Sonoro" /> */}
             <Image
               src={match_sonoro_img}
