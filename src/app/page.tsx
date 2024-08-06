@@ -28,7 +28,7 @@ export default function Home() {
   }
 
   function openPdf() {
-    window.open('https://www.300noise.com.br/images/apresentacao_match_sonoro_06-13.pdf', '_self');
+    window.open('/apresentacao_match_sonoro_06-13.pdf', '_self');
   }
 
   function openStore() {
