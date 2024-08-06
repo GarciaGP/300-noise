@@ -31,13 +31,17 @@ export default function Home() {
     window.open('https://www.300noise.com.br/images/apresentacao_match_sonoro_06-13.pdf', '_self');
   }
 
+  function openStore() {
+    window.open('https://loja300noise.lojavirtualnuvem.com.br/', '_blank');
+  }
+
   // openCloseNavLinks();
   // openCloseNavLinks();
 
   return (
     
     <div className="container" onClick={() => setClicks(clicks +1)}>
-      {clicks <= 0 && <div className="banner-image">
+      {clicks <= 0 && <div onClick={openStore} className="banner-image">
         <img src="assets/img/png_loja.png" alt="Confira a nova coleção na loja!" />
       </div>}
 
