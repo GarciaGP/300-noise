@@ -28,11 +28,11 @@ export default function Home() {
   }
 
   function openPdf() {
-    window.open('https://www.300noise.com.br/images/apresentacao_match_sonoro_06-13.pdf', '_self');
+    window.open('/apresentacao_match_sonoro_06-13.pdf', '_self');
   }
 
   function openStore() {
-    window.open('/apresentacao_match_sonoro_06-13.pdf', '_blank');
+    window.open('https://loja300noise.lojavirtualnuvem.com.br/', '_blank');
   }
 
   // openCloseNavLinks();
