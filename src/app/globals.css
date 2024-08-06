@@ -121,6 +121,16 @@ header .logo img {
   align-items: center;
 }
 
+.banner-image {
+  background-image: url('../../public/assets/img/png_loja.png');
+  position: fixed;
+  max-width: 80%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+
 .openbtn span {
   background: #000;
   display: inline-block;
@@ -561,5 +571,11 @@ footer ul li a {
 
   main .content h1 {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .banner-image img{
+    width: 300px;
   }
 }

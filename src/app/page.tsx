@@ -14,6 +14,7 @@ import assessoria from "../../public/assets/img/assessoria.png"
 export default function Home() {
 
   const [emailSent, setEmailSent] = useState(false);
+  const [clicks, setClicks] = useState(0);
 
   function openCloseNavLinks(): undefined {
     if (typeof window !== "undefined") {
@@ -34,7 +35,11 @@ export default function Home() {
   // openCloseNavLinks();
 
   return (
-    <div className="container">
+    
+    <div className="container" onClick={() => setClicks(clicks +1)}>
+      {clicks <= 0 && <div className="banner-image">
+        <img src="assets/img/png_loja.png" alt="Confira a nova coleção na loja!" />
+      </div>}
 
       <header>
         <div className="logo">
