@@ -32,7 +32,7 @@ export default function Home() {
   }
 
   function openStore() {
-    window.open('https://loja300noise.lojavirtualnuvem.com.br/', '_blank');
+    window.open('/apresentacao_match_sonoro_06-13.pdf', '_blank');
   }
 
   // openCloseNavLinks();
