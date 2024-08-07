@@ -13,8 +13,15 @@ import assessoria from "../../public/assets/img/assessoria.png"
 
 export default function Home() {
 
+
+
   const [emailSent, setEmailSent] = useState(false);
   const [clicks, setClicks] = useState(0);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const inputRef = React.useRef(null)
+
+  // const navLinksClasses = `nav-links ${isMenuOpen ? }`
 
   function openCloseNavLinks(): undefined {
     if (typeof window !== "undefined") {
@@ -35,12 +42,9 @@ export default function Home() {
     window.open('https://loja300noise.lojavirtualnuvem.com.br/', '_blank');
   }
 
-  // openCloseNavLinks();
-  // openCloseNavLinks();
-
   return (
-    
-    <div className="container" onClick={() => setClicks(clicks +1)}>
+
+    <div className="container" onClick={() => setClicks(clicks + 1)}>
       {clicks <= 0 && <div onClick={openStore} className="banner-image">
         <img src="assets/img/nova_site.jpg" alt="Confira a nova coleção na loja!" />
       </div>}
@@ -54,16 +58,17 @@ export default function Home() {
           />
         </div>
 
-        <div className="openbtn" onClick={openCloseNavLinks}>
-          <div className="openbtn-area"><span></span><span>
-          </span><span></span>
-            <p className="close-span" id="close-button">X</p>
+        <div className="openbtn" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          <div className="openbtn-area">
+            <span></span><span>
+            </span><span></span>
+            <p className="close-span" id="close-button" style={{ display: isMenuOpen ? 'block' : 'none' }}>X</p>
           </div>
         </div>
 
 
 
-        <div className="nav-links" id="nav-links">
+        <div className='nav-links' style={{ display: isMenuOpen ? 'block' : 'none' }}>
           <div className="nav-content">
             <div className="menu-image">
               <Image
