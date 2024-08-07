@@ -199,6 +199,7 @@ section {
   width: 100%;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .home {
@@ -264,10 +265,8 @@ section {
   height: auto;
 }
 
-
 .projects {
-  height: calc(100vh - 50px);
-  
+  height: calc(100vh - 50px); 
 }
 
 .bg-image {
@@ -318,12 +317,17 @@ section {
   display: flex;
   justify-content: center;
   cursor: pointer;
+  transition: transform .2s; 
 }
 
 .project-item img {
-  width: 90%;
-  max-width: 600px;
+  width: 100%;
   height: auto;
+  max-height: 70vh;
+}
+
+.project-item:hover {
+  transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .section-title {
