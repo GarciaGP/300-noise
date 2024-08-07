@@ -584,3 +584,9 @@ footer ul li a {
     width: 300px;
   }
 }
+
+@media (min-width: 500px) {
+  .banner-image img{
+    height: 600px;
+  }
+}
