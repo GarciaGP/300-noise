@@ -71,11 +71,13 @@ ul {
   font-size: 16px;
 }
 
-.section-links li a, .section-select li a {
+.section-links li a,
+.section-select li a {
   color: #000;
 }
 
-textarea:focus, input:focus{
+textarea:focus,
+input:focus {
   outline: none;
 }
 
@@ -173,7 +175,7 @@ header .logo img {
   padding: 65px;
 }
 
-.nav-content { 
+.nav-content {
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -266,17 +268,17 @@ section {
 }
 
 .projects {
-  height: calc(100vh - 50px); 
+  height: calc(100vh - 50px);
 }
 
 .bg-image {
- height: calc(100vh - 50px);
+  height: calc(100vh - 50px);
   width: 100%;
   position: absolute;
   overflow: hidden;
 }
 
-.bg-image > * {
+.bg-image>* {
   /* background-image: url(/public/match_sonordsfdsfo.jpeg); */
   /* height: calc(100vh - 50px);
   width: 100%; */
@@ -317,7 +319,7 @@ section {
   display: flex;
   justify-content: center;
   cursor: pointer;
-  transition: transform .2s; 
+  transition: transform .2s;
 }
 
 .project-item img {
@@ -327,7 +329,8 @@ section {
 }
 
 .project-item:hover {
-  transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.05);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .section-title {
@@ -355,7 +358,6 @@ section {
     linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent);
   background-size: 35px 35px;
   box-shadow: inset 0px 700px 500px -500px #fff, 0px -400px 500px -500px #fff;
-  min-height: 100vh;
 }
 
 .about::after {
@@ -381,6 +383,10 @@ section {
 .section-title.about-title {
   margin-bottom: 20px;
   text-align: left;
+}
+
+.about {
+  display: flex;
 }
 
 .about .text-area {
@@ -580,13 +586,52 @@ footer ul li a {
 }
 
 @media (max-width: 500px) {
-  .banner-image img{
+  .banner-image img {
     width: 300px;
   }
 }
 
 @media (min-width: 500px) {
-  .banner-image img{
+  .banner-image img {
     height: 600px;
   }
+}
+
+@media (min-width: 720px) {
+
+  .about {
+    flex-direction: row;
+  }
+
+  .about-info-wrapper {
+    width: 50%;
+    align-self: center;
+  }
+
+  .about-info-wrapper .text-area p {
+    font-size: 1.1rem;
+    margin: 18px 0px;
+  }
+
+  .about-info-wrapper .text-area > p {
+    font-weight: bold;
+  }
+
+  .about-info-wrapper .text-area > p ~ p{
+    font-weight: normal;
+  }
+
+  .about-cards-wrapper {
+    padding: 20px;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .about-cards-wrapper .about-card {
+    width: 250px;
+    margin: 10px 10px;
+  }
+
 }
