@@ -43,11 +43,13 @@ export default function Home() {
   }
 
   return (
-
     <div className="container" onClick={() => setClicks(clicks + 1)}>
       {clicks <= 0 && <div onClick={openStore} className="banner-image">
         <img src="assets/img/nova_site.jpg" alt="Confira a nova coleção na loja!" />
       </div>}
+
+      {clicks < 1 && <div className="window-darker"></div>}
+
 
       <header>
         <div className="logo">

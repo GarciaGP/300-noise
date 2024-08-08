@@ -38,6 +38,17 @@ body {
   color: #000;
 }
 
+.window-darker {
+  width: 100%;
+  height: 100%;
+  position: -webkit-sticky;
+  position: fixed;
+  z-index: 6000;
+  background-color: #000;
+  opacity: 0.5;
+  top: 0;
+}
+
 .text-centered {
   text-align: center;
 }
@@ -130,7 +141,7 @@ header .logo img {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  z-index: 999;
+  z-index: 9999;
   cursor: pointer;
 }
 
