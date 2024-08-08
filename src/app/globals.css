@@ -624,11 +624,11 @@ footer ul li a {
     margin: 18px 0px;
   }
 
-  .about-info-wrapper .text-area > p {
+  .about-info-wrapper .text-area>p {
     font-weight: bold;
   }
 
-  .about-info-wrapper .text-area > p ~ p{
+  .about-info-wrapper .text-area>p~p {
     font-weight: normal;
   }
 
@@ -643,6 +643,18 @@ footer ul li a {
   .about-cards-wrapper .about-card {
     width: 250px;
     margin: 10px 10px;
+  }
+
+  .contact {
+    height: auto;
+  }
+
+  .contact-wrapper {
+    height: 800px;
+    width: 600px;
+    align-self: center;
+    margin-left: 200px;
+    padding: 30px;
   }
 
 }
