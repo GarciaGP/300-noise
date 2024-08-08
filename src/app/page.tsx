@@ -79,11 +79,11 @@ export default function Home() {
               />
             </div>
             <ul className="section-select">
-              <li onClick={openCloseNavLinks}><a href="#home">HOME</a></li>
-              <li onClick={openCloseNavLinks}><a href="#projects">NOSSOS PROJETO</a>S</li>
-              <li onClick={openCloseNavLinks}><a href="#about">QUEM SOMOS</a></li>
+              <li onClick={() => setIsMenuOpen(false)}><a href="#home">HOME</a></li>
+              <li onClick={() => setIsMenuOpen(false)}><a href="#projects">NOSSOS PROJETO</a>S</li>
+              <li onClick={() => setIsMenuOpen(false)}><a href="#about">QUEM SOMOS</a></li>
               <li><a href="https://loja300noise.lojavirtualnuvem.com.br/">LOJA</a></li>
-              <li onClick={openCloseNavLinks}><a href="#contact">CONTATO</a></li>
+              <li onClick={() => setIsMenuOpen(false)}><a href="#contact">CONTATO</a></li>
             </ul>
             <ul className="section-links">
               <li><a href="https://www.instagram.com/300noise/">INSTAGRAM</a></li>
@@ -159,7 +159,7 @@ export default function Home() {
             <h3>QUEM SOMOS</h3>
           </div>
           <div className="text-area">
-            <p>A 300Noise é um estúdio de pesquisa e comunicação focado em cultura.</p>
+            <p><strong>A 300Noise é um estúdio de pesquisa e comunicação focado em cultura.</strong></p>
 
             <p>Nossa equipe é formada por cientistas sociais, profissionais da comunicação, história, geografia
               e artes visuais. A partir dessa diversidade, criamos uma fórmula bem particular de analisar a
@@ -168,8 +168,8 @@ export default function Home() {
             <p>A 300Noise se apoia em números, redes sociais, teoria da comunicação, história, charts,
               tendências e tudo mais que for útil para analisar a realidade. Trabalhamos para difundir
               conhecimento sobre música e cultura, produzindo conteúdo de qualidade e sem amarras. Produzimos
-              análises de dados, consultorias, pesquisas, estratégias de comunicação e curadoria... ou o que
-              mais você e seu projeto precisarem.</p>
+              análises de dados, consultorias, pesquisas, estratégias de comunicação e curadoria... <strong>ou o que
+              mais você e seu projeto precisarem.</strong></p>
           </div>
         </div>
         <div className="about-cards-wrapper">
