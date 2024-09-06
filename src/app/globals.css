@@ -331,12 +331,15 @@ section {
   justify-content: center;
   cursor: pointer;
   transition: transform .2s;
+  width: 500px;
+  height: auto;
+  max-height: 70vh;
 }
 
 .project-item img {
-  width: 100%;
+  /* width: 100%;
   height: auto;
-  max-height: 70vh;
+  max-height: 70vh; */
 }
 
 .project-item:hover {
@@ -586,6 +589,36 @@ footer ul li a {
 .img-placeholder {
   height: 400px;
   background-color: purple;
+}
+
+.swiper-container {
+  width: 100%;
+  margin: 40px 0;
+  position: relative; /* Adicione isso se necessário para garantir que a altura seja controlada corretamente */
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* overflow: hidden; */
+  opacity: 0.4;
+  transition: .7s;
+}
+
+.swiper-slide img {
+  width: auto !important;
+  height: 100% !important; /* Ajuste isso conforme necessário para manter a proporção */
+  object-fit: cover !important; /* Ou use contain se quiser que a imagem inteira caiba dentro do contêiner */
+}
+
+.swiper-slide-active {
+  /* opacity: 1;
+  z-index: 1;
+  transform: scale(1.5); */
+  opacity: 1;
+  z-index: 1;
+  transform: scale(1.05); /* Reduzido de 1.5 para 1.05 para não causar excesso de zoom */
 }
 
 @media (max-width: 400px) {
