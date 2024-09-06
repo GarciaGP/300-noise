@@ -331,6 +331,9 @@ section {
   justify-content: center;
   cursor: pointer;
   transition: transform .2s;
+  width: 500px;
+  height: auto;
+  max-height: 70vh;
 }
 
 .project-item img {
@@ -586,6 +589,29 @@ footer ul li a {
 .img-placeholder {
   height: 400px;
   background-color: purple;
+}
+
+.swiper-container {
+  width: 100%;
+  margin: 40px 0;
+  /* padding: 45px 0; */
+  /* height: 100%; */
+}
+
+.swiper-slide {
+  opacity: 0.4;
+  overflow: hidden;
+  transition: .7s;
+}
+
+.swiper-slide img {
+  width: 100%;
+}
+
+.swiper-slide-active {
+  opacity: 1;
+  z-index: 1;
+  transform: scale(1.5);
 }
 
 @media (max-width: 400px) {

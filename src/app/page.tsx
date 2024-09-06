@@ -2,14 +2,16 @@
 
 import Image from "next/image";
 import React, { useEffect, useState } from 'react';
-import styles from "./page.module.css";
 import logo from "../../public/images/300noiseLogo.png"
 import text300 from "../../public/assets/img/300.png"
 import textNoise from "../../public/assets/img/noisetxt.png"
 import match_sonoro_img from "../../public/assets/img/amor_no_som.jpg"
-import consultoria from "../../public/assets/img/consultoria.png"
-import musicBranding from "../../public/assets/img/music branding.png"
-import assessoria from "../../public/assets/img/assessoria.png"
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, FreeMode, Navigation } from 'swiper/modules';
+
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 export default function Home() {
 
@@ -33,6 +35,7 @@ export default function Home() {
       }
     }
   }
+
 
   function openPdf() {
     window.open('/apresentacao_match_sonoro_06-13.pdf', '_self');
@@ -143,16 +146,72 @@ export default function Home() {
         <div className="section-title">
           <h3>NOSSOS PROJETOS</h3>
         </div>
-        <div className="projects-showcase">
-          <div className="project-item" onClick={openPdf}>
-            {/* <img src="./assets/img/match_sonoro.jpeg" alt="Match Sonoro" /> */}
+        {/* <div className="projects-showcase"> */}
+        <Swiper
+          // slidesPerView={1.3}
+          pagination={true}
+          centeredSlides={true}
+          spaceBetween={40}
+          loop={true}
+          modules={[Pagination, Navigation]}
+          navigation={{
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+          }
+          }
+          speed={500}
+          breakpoints={{
+            640: {
+              slidesPerView: 1.2,
+            },
+            768: {
+              slidesPerView: 2.8
+            },
+            1080: {
+              slidesPerView: 2.8
+            },
+            1280: {
+              slidesPerView: 2.8
+            }
+          }}
+          className="swiper-container"
+        >
+          <SwiperSlide>
+            <Image
+              className="project-item"
+              onClick={openPdf}
+              src={match_sonoro_img}
+              alt="Match Sonoro"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image
+              className="project-item"
+              onClick={openPdf}
+              src={'/assets/img/mita_page-0001.jpg'}
+              alt="Mita"
+              width={500}
+              height={500}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image
+              className="project-item"
+              onClick={openPdf}
+              src={match_sonoro_img}
+              alt="Match Sonoro"
+            />
+          </SwiperSlide>
+        </Swiper>
+        {/* <div className="project-item" onClick={openPdf}>
             <Image
               src={match_sonoro_img}
               alt="Match Sonoro"
             />
-          </div>
-        </div>
+          </div> */}
+        {/* </div> */}
       </section>
+
       <section className="about dark-text" id="about">
         <div className="about-info-wrapper">
           <div className="section-title about-title">
@@ -169,7 +228,7 @@ export default function Home() {
               tendências e tudo mais que for útil para analisar a realidade. Trabalhamos para difundir
               conhecimento sobre música e cultura, produzindo conteúdo de qualidade e sem amarras. Produzimos
               análises de dados, consultorias, pesquisas, estratégias de comunicação e curadoria... <strong>ou o que
-              mais você e seu projeto precisarem.</strong></p>
+                mais você e seu projeto precisarem.</strong></p>
           </div>
         </div>
         <div className="about-cards-wrapper">
@@ -252,7 +311,6 @@ export default function Home() {
           }
         </div>
       </section>
-
     </div>
 
 
