@@ -196,6 +196,16 @@ export default function Home() {
           <SwiperSlide>
             <Image
               className="project-item"
+              onClick={() => openPdf('/Zine.pdf')}
+              src={'/assets/img/zine.jpg'}
+              alt="Zine"
+              layout="fill" // Use layout fill para manter a proporção da imagem
+              objectFit="cover" // Ajuste a propriedade objectFit
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image
+              className="project-item"
               onClick={() => openPdf("/apresentacao_match_sonoro_06-13.pdf")}
               src={match_sonoro_img}
               alt="Match Sonoro"
@@ -219,16 +229,6 @@ export default function Home() {
               onClick={() => openPdf('/apresentacao_prima_23.pdf')}
               src={'/assets/img/prima_2023.jpeg'}
               alt="Primavera 2023"
-              layout="fill" // Use layout fill para manter a proporção da imagem
-              objectFit="cover" // Ajuste a propriedade objectFit
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Image
-              className="project-item"
-              onClick={() => openPdf('/Zine.pdf')}
-              src={'/assets/img/zine.jpg'}
-              alt="Zine"
               layout="fill" // Use layout fill para manter a proporção da imagem
               objectFit="cover" // Ajuste a propriedade objectFit
             />
