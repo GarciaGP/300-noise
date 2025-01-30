@@ -12,6 +12,7 @@ import { Pagination, FreeMode, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { ContactForm } from "./components/contact-form";
 
 export default function Home() {
   const [emailSent, setEmailSent] = useState(false);
@@ -209,6 +210,8 @@ export default function Home() {
               onClick={() => openPdf("/apresentacao_match_sonoro_06-13.pdf")}
               src={match_sonoro_img}
               alt="Match Sonoro"
+              layout="fill" // Use layout fill para manter a proporção da imagem
+              objectFit="cover" // Ajuste a propriedade objectFit
             // layout="fill" // Use layout fill para manter a proporção da imagem
             // objectFit="cover" // Ajuste a propriedade objectFit
             />
@@ -332,43 +335,7 @@ export default function Home() {
         </div>
       </section>
       <section className="contact dark-text" id="contact">
-        <div className="contact-wrapper">
-          <div className="section-title">
-            <h3>BORA BATER UM PAPO?</h3>
-          </div>
-          <div className="text-area">
-            <p>
-              Quer a nossa visão e produção presentes na sua ideia? Precisa de
-              dados e análises? Entre em contato!
-            </p>
-          </div>
-          <div className="text-area">
-            <p>Se preferir, entre em contato via 300noise@gmail.com.</p>
-          </div>
-
-          {!emailSent ? (
-            <div className="form-wrapper">
-              <form action="post">
-                <input type="text" name="name" id="" placeholder="Nome" />
-                <input type="text" name="email" id="" placeholder="Email" />
-                <textarea
-                  rows={8}
-                  name="suggestions"
-                  id=""
-                  placeholder="O que tem para nos dizer?"
-                ></textarea>
-                <button onClick={() => setEmailSent(true)} type="submit">
-                  ENVIAR
-                </button>
-              </form>
-            </div>
-          ) : (
-            <div>
-              <p>Recebemos seu e-mail!</p>
-              <p>Responderemos assim que possível! </p>
-            </div>
-          )}
-        </div>
+        <ContactForm></ContactForm>
       </section>
     </div>
   );

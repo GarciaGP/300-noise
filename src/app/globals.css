@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .ubuntu-mono-regular {
   font-family: "Ubuntu Mono", monospace;
   font-weight: 400;
