@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .ubuntu-mono-regular {
   font-family: "Ubuntu Mono", monospace;
   font-weight: 400;
@@ -383,16 +387,6 @@ section {
   left: 0;
   background: linear-gradient(white 0%, transparent 100%);
 }
-
-/* .about::before {
-  position: absolute;
-  content: "";
-  height: 30%;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  background: linear-gradient(transparent 0%, white 100%);
-} */
 
 .section-title.about-title {
   margin-bottom: 20px;
