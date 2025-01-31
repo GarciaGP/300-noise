@@ -1,27 +1,17 @@
 "use client";
 
-import Image from "next/image";
+import Image from "next/legacy/image";
 import React, { useEffect, useState } from "react";
 import logo from "../../public/images/300noiseLogo.png";
 import text300 from "../../public/assets/img/300.png";
 import textNoise from "../../public/assets/img/noisetxt.png";
-import match_sonoro_img from "../../public/assets/img/amor_no_som.jpg";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, FreeMode, Navigation } from "swiper/modules";
 
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
 import { ContactForm } from "./components/contact-form";
+import { ProjectsSwiper } from "./components/projects-swiper";
 
 export default function Home() {
-  const [emailSent, setEmailSent] = useState(false);
   const [clicks, setClicks] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const inputRef = React.useRef(null);
-
-  // const navLinksClasses = `nav-links ${isMenuOpen ? }`
 
   function openCloseNavLinks(): undefined {
     if (typeof window !== "undefined") {
@@ -36,10 +26,6 @@ export default function Home() {
           : (closeButtonDisplay.style.display = "none");
       }
     }
-  }
-
-  function openPdf(documentPath: string) {
-    window.open(documentPath, "_self");
   }
 
   function openStore() {
@@ -62,7 +48,7 @@ export default function Home() {
       <header>
         <div className="logo">
           {/* <img src="../ assets/img/300noiseLogo.png" alt="300Noise Logo" /> */}
-          <Image src={logo} alt="300 Noise Logo" />
+          <Image src={logo} alt="300 Noise Logo" width={100} height={50} objectFit="cover" />
         </div>
 
         <div className="openbtn" onClick={() => setIsMenuOpen(!isMenuOpen)}>
@@ -162,91 +148,16 @@ export default function Home() {
           <Image
             src={"/assets/img/match_sonoro.jpeg"}
             alt="O amor está no ar?"
-            fill={true}
+            layout="fill"
           ></Image>
-          {/* backgroundImage: `url(/assets/img/match_sonoro.jpeg)` */}
-          {/* <div className="blur"></div> */}
         </div>
         <div className="section-title">
           <h3>NOSSOS PROJETOS</h3>
         </div>
-        {/* <div className="projects-showcase"> */}
-        <Swiper
-          pagination={{ clickable: true }}
-          centeredSlides={true}
-          spaceBetween={30}
-          loop={true}
-          modules={[Pagination, Navigation]}
-          navigation={{
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          }}
-          breakpoints={{
-            640: {
-              slidesPerView: 1,
-            },
-            768: {
-              slidesPerView: 2,
-            },
-            1080: {
-              slidesPerView: 3,
-            },
-          }}
-          className="swiper-container"
-        >
-          <SwiperSlide>
-            <Image
-              className="project-item"
-              onClick={() => openPdf('/Zine.pdf')}
-              src={'/assets/img/zine.jpg'}
-              alt="Zine"
-              layout="fill" // Use layout fill para manter a proporção da imagem
-              objectFit="cover" // Ajuste a propriedade objectFit
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Image
-              className="project-item"
-              onClick={() => openPdf("/apresentacao_match_sonoro_06-13.pdf")}
-              src={match_sonoro_img}
-              alt="Match Sonoro"
-              layout="fill" // Use layout fill para manter a proporção da imagem
-              objectFit="cover" // Ajuste a propriedade objectFit
-            // layout="fill" // Use layout fill para manter a proporção da imagem
-            // objectFit="cover" // Ajuste a propriedade objectFit
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Image
-              className="project-item"
-              onClick={() => openPdf('/apresentacao_mita.pdf')}
-              src={"/assets/img/mita_page-0001.jpg"}
-              alt="Mita"
-              layout="fill" // Use layout fill para manter a proporção da imagem
-              objectFit="cover" // Ajuste a propriedade objectFit
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Image
-              className="project-item"
-              onClick={() => openPdf('/apresentacao_prima_23.pdf')}
-              src={'/assets/img/prima_2023.jpeg'}
-              alt="Primavera 2023"
-              layout="fill" // Use layout fill para manter a proporção da imagem
-              objectFit="cover" // Ajuste a propriedade objectFit
-            />
-          </SwiperSlide>
-        </Swiper>
-
-        {/* <div className="project-item" onClick={openPdf}>
-            <Image
-              src={match_sonoro_img}
-              alt="Match Sonoro"
-            />
-          </div> */}
-        {/* </div> */}
+        <div className="projects-showcase"> 
+            <ProjectsSwiper></ProjectsSwiper>
+        </div>
       </section>
-
       <section className="about dark-text" id="about">
         <div className="about-info-wrapper">
           <div className="section-title about-title">
