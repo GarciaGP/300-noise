@@ -11,6 +11,7 @@ import { ProjectsSwiper } from "./components/projects-swiper";
 
 export default function Home() {
   const [clicks, setClicks] = useState(0);
+  const [projectBackgroundPath, setProjectBackgroundPath] = useState('');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   function openCloseNavLinks(): undefined {
@@ -30,6 +31,11 @@ export default function Home() {
 
   function openStore() {
     window.open("https://loja300noise.lojavirtualnuvem.com.br/", "_blank");
+  }
+
+  function updateProjectsBackgroundCallBack(path: string) {
+    setProjectBackgroundPath(path);
+    console.log(projectBackgroundPath);
   }
 
   return (
@@ -114,8 +120,6 @@ export default function Home() {
           </p>
         </div>
         <div className="landing">
-          {/* <img className="landing-300" src="assets/img/300.png" />
-              <img className="landing-noise" src="assets/img/noisetxt.png" /> */}
           <div className="images-container">
             <div className="image-300">
               <Image className="landing-300" src={text300} alt="300" />
@@ -146,7 +150,7 @@ export default function Home() {
       <section className="projects" id="projects">
         <div className="bg-image">
           <Image
-            src={"/assets/img/match_sonoro.jpeg"}
+            src={projectBackgroundPath}
             alt="O amor está no ar?"
             layout="fill"
           ></Image>
@@ -155,7 +159,7 @@ export default function Home() {
           <h3>NOSSOS PROJETOS</h3>
         </div>
         <div className="projects-showcase"> 
-            <ProjectsSwiper></ProjectsSwiper>
+            <ProjectsSwiper updateProjectsBackgroundCallBack={updateProjectsBackgroundCallBack}></ProjectsSwiper>
         </div>
       </section>
       <section className="about dark-text" id="about">
@@ -224,11 +228,6 @@ export default function Home() {
             <div className="about-card-outline"></div>
             <div className="icon">
               <img src="assets/img/producao.png" alt="produção de projetos" />
-              {/* <Image
-                fill={true}
-                src="/producao.png"
-                alt="produção"
-              /> */}
             </div>
             <div className="card-text">
               <p>PRODUÇÃO DE PROJETOS</p>
