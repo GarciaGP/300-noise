@@ -291,27 +291,16 @@ section {
   width: 100%;
   position: absolute;
   overflow: hidden;
+  transition: 1s;
 }
 
-.bg-image>* {
-  /* background-image: url(/public/match_sonordsfdsfo.jpeg); */
-  /* height: calc(100vh - 50px);
-  width: 100%; */
+.bg-image img {
   position: absolute;
   filter: opacity(0.8);
   filter: blur(50px);
-  /* background-position: center;
-  background-size: contain; */
+  transition: 1s opacity;
 }
 
-/* .bg-image::before {
-  background-color: rgba(235, 235, 235, .3);
-  content: '';
-  filter: blur(18px);
-  position: absolute;
-  inset: 3%;
-  z-index: -1;
-} */
 
 .bg-image .blur {
   position: absolute;
@@ -338,12 +327,17 @@ section {
   width: 500px;
   height: auto;
   max-height: 70vh;
+  width: 100%;
+  max-width: 100%;
+  max-height: -webkit-fill-available;
 }
 
 .project-item img {
   /* width: 100%;
   height: auto;
   max-height: 70vh; */
+  max-width: 100%;
+  max-height: -webkit-fill-available;
 }
 
 .project-item:hover {
@@ -595,15 +589,16 @@ footer ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* overflow: hidden; */
   opacity: 0.4;
   transition: .7s;
+  width: 100%;
 }
 
 .swiper-slide img {
   width: auto !important;
   height: 100% !important; /* Ajuste isso conforme necessário para manter a proporção */
   object-fit: cover !important; /* Ou use contain se quiser que a imagem inteira caiba dentro do contêiner */
+  max-width: 100%;
 }
 
 .swiper-slide-active {
@@ -612,7 +607,6 @@ footer ul li a {
   transform: scale(1.5); */
   opacity: 1;
   z-index: 1;
-  transform: scale(1.05); /* Reduzido de 1.5 para 1.05 para não causar excesso de zoom */
 }
 
 @media (max-width: 400px) {
@@ -621,17 +615,36 @@ footer ul li a {
   main .content h1 {
     font-size: 2rem;
   }
+  .project-item {
+    height: 600px;
+    max-width: 100%;
+    max-width: 100%;
+    max-height: -webkit-fill-available;
+  }
 }
 
 @media (max-width: 500px) {
   .banner-image img {
     width: 300px;
   }
+
+  .swiper-backface-hidden .swiper-slide {
+    display: flex;
+  }
 }
 
 @media (min-width: 500px) {
   .banner-image img {
     height: 600px;
+  }
+}
+
+@media (min-width: 500px) {
+  .project-item {
+    height: 600px;
+    max-width: 100%;
+    max-width: 100%;
+    max-height: -webkit-fill-available;
   }
 }
 

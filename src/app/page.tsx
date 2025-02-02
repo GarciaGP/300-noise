@@ -5,8 +5,6 @@ import React, { useEffect, useState } from "react";
 import logo from "../../public/images/300noiseLogo.png";
 import { Landing } from "./section-components/landing/landing";
 
-import { ContactForm } from "./components/contact-form";
-import { ProjectsSwiper } from "./components/projects-swiper";
 import { Projects } from "./section-components/projects/projects";
 import { About } from "./section-components/about/about";
 import { Contact } from "./section-components/contact/contact";
