@@ -30,8 +30,11 @@ export function ProjectsSwiper({updateProjectsBackgroundCallBack}: any) {
                 prevEl: ".swiper-button-prev",
             }}
             breakpoints={{
+                100: {
+                    slidesPerView: 1,
+                },
                 640: {
-                    slidesPerView: 2,
+                    slidesPerView: 1    ,
                 },
                 768: {
                     slidesPerView: 2,
@@ -50,8 +53,8 @@ export function ProjectsSwiper({updateProjectsBackgroundCallBack}: any) {
                         onClick={() => openPdf(project.pdf_file)}
                         src={project.image_src}
                         alt={project.alt_text}
-                        height={600}
-                        width={600}
+                        height={370}
+                        width={370}
                     />
                 </SwiperSlide>
             ))}
