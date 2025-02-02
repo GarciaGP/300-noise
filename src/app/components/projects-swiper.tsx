@@ -22,25 +22,21 @@ export function ProjectsSwiper({updateProjectsBackgroundCallBack}: any) {
         <Swiper
             pagination={{ clickable: true }}
             centeredSlides={true}
-            spaceBetween={30}
+            spaceBetween={20}
             loop={true}
             modules={[Navigation]}
+            slidesPerView={1.5}
             navigation={{
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             }}
             breakpoints={{
                 100: {
-                    slidesPerView: 1,
-                },
-                640: {
-                    slidesPerView: 1    ,
+                    slidesPerView: 1.15,
                 },
                 768: {
-                    slidesPerView: 2,
-                },
-                1080: {
-                    slidesPerView: 3,
+                    slidesPerView: 
+                    3,
                 },
             }}
             className="swiper-container"
@@ -53,8 +49,8 @@ export function ProjectsSwiper({updateProjectsBackgroundCallBack}: any) {
                         onClick={() => openPdf(project.pdf_file)}
                         src={project.image_src}
                         alt={project.alt_text}
-                        height={370}
-                        width={370}
+                        height={550}
+                        width={550}
                     />
                 </SwiperSlide>
             ))}

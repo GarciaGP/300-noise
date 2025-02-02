@@ -282,26 +282,6 @@ section {
   height: auto;
 }
 
-.projects {
-  height: calc(100vh - 50px);
-}
-
-.bg-image {
-  height: calc(100vh - 50px);
-  width: 100%;
-  position: absolute;
-  overflow: hidden;
-  transition: 1s;
-}
-
-.bg-image img {
-  position: absolute;
-  filter: opacity(0.8);
-  filter: blur(50px);
-  transition: 1s opacity;
-}
-
-
 .bg-image .blur {
   position: absolute;
   height: 100%;
@@ -311,33 +291,6 @@ section {
 
 .projects .section-title {
   color: #fff;
-}
-
-.projects-showcase {
-  display: flex;
-  justify-content: center;
-}
-
-.project-item {
-  z-index: 2;
-  display: flex;
-  justify-content: center;
-  cursor: pointer;
-  transition: transform .2s;
-  width: 500px;
-  height: auto;
-  max-height: 70vh;
-  width: 100%;
-  max-width: 100%;
-  max-height: -webkit-fill-available;
-}
-
-.project-item img {
-  /* width: 100%;
-  height: auto;
-  max-height: 70vh; */
-  max-width: 100%;
-  max-height: -webkit-fill-available;
 }
 
 .project-item:hover {
@@ -585,22 +538,6 @@ footer ul li a {
   position: relative; /* Adicione isso se necessário para garantir que a altura seja controlada corretamente */
 }
 
-.swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0.4;
-  transition: .7s;
-  width: 100%;
-}
-
-.swiper-slide img {
-  width: auto !important;
-  height: 100% !important; /* Ajuste isso conforme necessário para manter a proporção */
-  object-fit: cover !important; /* Ou use contain se quiser que a imagem inteira caiba dentro do contêiner */
-  max-width: 100%;
-}
-
 .swiper-slide-active {
   /* opacity: 1;
   z-index: 1;
@@ -615,12 +552,12 @@ footer ul li a {
   main .content h1 {
     font-size: 2rem;
   }
-  .project-item {
+  /* .project-item {
     height: 600px;
     max-width: 100%;
     max-width: 100%;
     max-height: -webkit-fill-available;
-  }
+  } */
 }
 
 @media (max-width: 500px) {

@@ -1,6 +1,7 @@
 import { ProjectsSwiper } from "@/app/components/projects-swiper";
 import Image from "next/legacy/image";
 import { useState } from "react";
+import './projects.css'
 
 
 export function Projects() {
@@ -10,7 +11,7 @@ export function Projects() {
         setProjectBackgroundPath(path);
         console.log(projectBackgroundPath);
     }
-    
+
     return (
         <section className="projects" id="projects">
             <div className="bg-image">
