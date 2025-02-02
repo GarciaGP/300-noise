@@ -1,0 +1,24 @@
+{
+    "data": [
+        {
+            "image_src": "/assets/img/zine.jpg",
+            "pdf_file": "/Zine.pdf",
+            "alt_text": "Zine"
+        },
+        {
+            "image_src": "/assets/img/amor_no_som.jpg",
+            "pdf_file": "/apresentacao_match_sonoro_06-13.pdf",
+            "alt_text": "O amor está no ar?"
+        },
+        {
+            "image_src": "/assets/img/mita_page-0001.jpg",
+            "pdf_file": "/apresentacao_mita.pdf",
+            "alt_text": "Mita"
+        },
+        {
+            "image_src": "/assets/img/prima_2023.jpeg",
+            "pdf_file": "/apresentacao_prima_23.pdf",
+            "alt_text": "Primavera 2013"
+        }
+    ]
+}
