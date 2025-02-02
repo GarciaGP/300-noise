@@ -44,7 +44,7 @@ export function ProjectsSwiper({updateProjectsBackgroundCallBack}: any) {
             onSlideChange={(swiper) => updateProjectsBackgroundCallBack(swiper.slides[swiper.activeIndex].dataset.id)}
         >
             {projectsData.data.map(project => (
-                <SwiperSlide data-id={project.image_src}>
+                <SwiperSlide data-id={project.image_src} key={project.alt_text}>
                     <Image
                         className="project-item"
                         onClick={() => openPdf(project.pdf_file)}
