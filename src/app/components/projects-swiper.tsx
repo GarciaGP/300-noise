@@ -24,7 +24,7 @@ export function ProjectsSwiper({updateProjectsBackgroundCallBack}: any) {
             centeredSlides={true}
             spaceBetween={30}
             loop={true}
-            modules={[Pagination, Navigation]}
+            modules={[Navigation]}
             navigation={{
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
